@@ -22,7 +22,7 @@ padding:8px 13px;font-size:13px;backdrop-filter:blur(6px)}
 <button id="bIn">Interior</button>
 <button id="bNi">Night</button>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 /* metres. building 20.1 x 20.1, two storeys, total 9.4
    ground clear 4.40 | first floor 4.75 | roof 9.00-9.40 */
@@ -342,7 +342,7 @@ for(var b1=0;b1<26;b1++){
  s3.position.set(bx1,.35,bz1);s3.scale.y=.75;scene.add(s3);}
 [[2.6,24.4],[7.4,24.4],[12.4,24.4],[17.4,24.4]].forEach(function(p){
  cy(p[0],.02,p[1],.07,1.0,M(DARK),8);
- cy(p[0],1.02,p[1],.13,.14,M(BULB===null?0:0x2a2e33),10);});
+ cy(p[0],1.02,p[1],.13,.14,M(0x2a2e33),10);});
 
 /* labels */
 function label(txt,x,y,z){
@@ -418,4 +418,4 @@ upd();
  renderer.render(scene,camera);
  requestAnimationFrame(loop);
 })();
-<\/script></body></html>
+</script></body></html>
